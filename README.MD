@@ -1,6 +1,6 @@
 # Simple Cart GraphQL API
 
-[Working Demo](https://vetradar-graphql.herokuapp.com/graphql)
+[Working Demo](https://graphql-cart.herokuapp.com/graphql)
 
 
 ## Install & Build
