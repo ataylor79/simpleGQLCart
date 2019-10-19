@@ -1,0 +1,32 @@
+type Product {
+    name: String
+    price: Float
+}
+
+type BasketProduct {
+    name: String
+    price: Float
+    quantity: Int
+    total: Float
+}
+
+type CompleteBasket {
+    products: [BasketProduct]
+    total: Float
+}
+
+input ProductInput {
+    name: String!
+    price: Float!
+}
+
+type Query {
+    basket: CompleteBasket
+    products: [Product]
+}
+
+type Mutation {
+    addProduct(product: ProductInput): CompleteBasket
+    removeProduct(name: String!): CompleteBasket
+    clearBasket: CompleteBasket
+}
